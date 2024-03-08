@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lovely Sweets</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Bootstrap JS and jQuery (for dropdowns) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    /* Custom CSS for styling */
+    body {
+      background-image: url('cof1.jpg');
+      background-size: 70%;
+      background-position: center;
+      color: #071011;
+      image-rendering: crisp-edges;
+      min-height: 100vh;
+      position: relative;
+      margin-bottom: -50px; /* Height of the footer */
+    }
+    .navbar-brand img {
+      margin-right: 10px;
+    }
+    .menu-item {
+      padding: 10px;
+    }
+    .menu-item .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 8px 8px #f3282854;
+      background-color: chocolate;
+      transition: box-shadow 0.3s;
+    }
+    .menu-item .card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .menu-item .card-body {
+      text-align: center;
+      background-color: hwb(30 16% 20% / 0.116);
+    }
+    .sidebar {
+      background-color: #0a6148e6;
+      height: 50%;
+      width: 50vh;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .sidebar-heading {
+      padding: 5px 0;
+      text-align: center;
+      border-bottom: firebrick;
+    }
+    .nav-link {
+      color: #14e3d1e1;
+    }
+    .nav-link:hover {
+      color: hsl(0, 90%, 43%);
+    }
+    .main-content {
+      padding: 20px;    
+
+    }
+    form {
+      background-image: url('piz1.jpg');
+      background-size: cover;
+      font-weight: 500;
+    }
+    select {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+    option {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+    footer {
+      background-color: hsl(210, 88%, 47%);
+      color: #ffffff;
+      text-align: center;
+      padding: 5px 0;
+      
+      width: 100%;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="logo2.png" width="80" height="80" alt="Caffe Logo">
+      OLIVE Foods
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Delivery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">MasterShef</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><select> <option value="0">..Menu..</option>
+            <option value="1">Indian</option>
+            <option value="2">Chineas</option>
+            <option value="3">Italian</option></select></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2 class="sidebar-heading">Order Online</h2>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Time Table</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Breakfast</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Lunch</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Dinner</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Dine In</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-4 menu-item">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">About US</h5>
+              <p class="card-text">Description of Menu Item</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Fast Food</h5>
+              <p class="card-text">Enjoy your Day</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sweets</h5>
+              <p class="card-text">Enjoy The delight</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Lunch</h5>
+                <p class="card-text">Choose Your Table</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 menu-item">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Coffee</h5>
+                <p class="card-text">varaities</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 menu-item">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Our Partners</h5>
+                <p class="card-text">Professionals</p>
+              </div>
+            </div>
+          </div>
+        <!-- Add more menu items as needed -->
+      </div>
+    </div>
+
+    <!-- Form with table, checkboxes, and radio buttons -->
+    <div class="container mt-4 nav-link">
+      <div class="row menu-item card">
+        <div class="col-md-12 mx-auto">
+          <form>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" align="center">Option</th>
+                  <th scope="col" align="center">Description</th>
+                  <th scope="col" align="center">Item</th>
+                  <th scope="col" align="center">Type</th>
+                  <th scope="col" align="center">Desert</th>
+                  <th scope="col" align="center">BILL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Burger</td>
+                  <td style="font-family: fantasy;">Veg / Non-veg</td>
+                  <td><input type="checkbox"></td>
+                  <td><select><option name = "Course">...Please Select...</option></select></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Pizza</td>
+                  <td style="font-family: fantasy;">Veg / Non-veg</td>
+                  <td><input type="checkbox"></td>
+                  <td><select><option name = "Course">...Please Select...</option></select></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Gulab jamun</td>
+                  <td style="font-family: fantasy;">Sugar / Sugar Free</td>
+                  <td><input type="checkbox"></td>
+                  <td><select><option name = "Course">...Please Select...</option></select></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lunch</td>
+                  <td style="font-family: fantasy;">Veg / Non-veg</td>
+                  <td><input type="radio" name="option"></td>
+                  <td><select><option name = "Course">...Please Select...</option></select></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Coffee</td>
+                  <td style="font-family: fantasy;">Delight / Mochaccino</td>
+                  <td><input type="radio" name="option"></td>
+                  <td><select><option name = "Course">...Please Select...</option></select></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="text"></td>
+                </tr>
+              </tbody>
+            </table>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 Lovely Professional University. All rights reserved.</p>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
